@@ -36,3 +36,5 @@ set tabstop=4
 set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
+" Add paste toggle, so when pasting code, deactiavte auto indenting
+set pastetoggle=<F2>
