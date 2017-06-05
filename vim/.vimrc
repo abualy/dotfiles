@@ -26,6 +26,8 @@ set backspace=indent,eol,start
 set hidden
 " Enable syntax highlighting
 syntax enable
+" activate pathogen
+execute pathogen#infect()
 " Enable file specific behavior like syntax highlighting and indentation
 filetype on
 filetype plugin on
@@ -38,3 +40,11 @@ set shiftwidth=4
 set expandtab
 " Add paste toggle, so when pasting code, deactiavte auto indenting
 set pastetoggle=<F2>
+" Add anything copied, cut or selected to be sent to primary register
+set clipboard=unnamed
+" disable cursor navigation, to help me stick to hjkl :)
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+
