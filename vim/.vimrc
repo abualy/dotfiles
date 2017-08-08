@@ -5,6 +5,7 @@ set nocompatible
 " -- Display
 set title " Update the title of your window or your terminal
 set number " Display line numbers
+set relativenumber " Display relative numbers 
 set ruler " Display cursor position
 set wrap " Wrap lines when they are too long
 set scrolloff=3 " Display at least 3 lines around you cursor
@@ -40,6 +41,8 @@ set shiftwidth=4
 set expandtab
 " Add paste toggle, so when pasting code, deactiavte auto indenting
 set pastetoggle=<F2>
+" Set NerdTree Toggle to F3
+nmap <F3> :NERDTreeToggle<CR>
 " Add anything copied, cut or selected to be sent to primary register
 set clipboard=unnamed
 " disable cursor navigation, to help me stick to hjkl :)
